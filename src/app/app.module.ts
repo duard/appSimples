@@ -8,6 +8,7 @@ import { routes } from './app.routes';
 
 import { FrontendModule } from './frontend/frontend.module';
 import { BackendModule } from './backend/backend.module';
+import { AuthenticationModule } from './authentication/authentication.module';
 
 import { AppComponent } from './app.component';
 
@@ -21,7 +22,8 @@ import { AppComponent } from './app.component';
     RouterModule.forRoot(routes, { useHash: false }),
 
     FrontendModule,
-    BackendModule
+    BackendModule,
+    AuthenticationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

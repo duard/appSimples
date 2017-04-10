@@ -4,7 +4,7 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
   selector: 'app-backend',
   templateUrl: './backend.component.html',
   styleUrls: ['./backend.component.css'],
-  encapsulation: ViewEncapsulation.Emulated
+  encapsulation: ViewEncapsulation.None
 
 })
 export class BackendComponent implements OnInit {

@@ -11,7 +11,7 @@ export const BackendRoutes: Route[] = [
     children: [
       { path: '', redirectTo: 'index', pathMatch: 'full' },
       ...IndexRoutes,
-      ...SettingsRoutes,
+      ...SettingsRoutes
     ]
   }
 ];

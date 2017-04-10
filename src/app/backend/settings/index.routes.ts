@@ -3,7 +3,7 @@ import { SettingsComponent } from './index';
 
 export const SettingsRoutes: Route[] = [
   {
-    path: 'settings', 
+    path: 'settings',
     component: SettingsComponent,
     data: { title: 'Settings Backend' }
   }
