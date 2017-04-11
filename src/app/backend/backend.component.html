@@ -1,449 +1,344 @@
-<div class="container">
-    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
-    <div class="mail-box">
-        <aside class="sm-side">
-            <div class="user-head">
-                <a class="inbox-avatar" href="javascript:;">
-                    <img width="64" hieght="60" src="http://bootsnipp.com/img/avatars/ebeb306fd7ec11ab68cbcaa34282158bd80361a7.jpg">
-                </a>
-                <div class="user-name">
-                    <h5><a href="#">Alireza Zare</a></h5>
-                    <span><a href="#">Info.Ali.Pci@Gmail.com</a></span>
-                </div>
-                <a class="mail-dropdown pull-right" href="javascript:;">
-                    <i class="fa fa-chevron-down"></i>
-                </a>
-            </div>
-            <div class="inbox-body">
-                <a routerLink="/frontend" data-toggle="modal" title="Compose" class="btn btn-compose">
-                              Compose
-                          </a>
-                <!-- Modal -->
-                <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade" style="display: none;">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
-                                <h4 class="modal-title">Compose</h4>
-                            </div>
-                            <div class="modal-body">
-                                <form role="form" class="form-horizontal">
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">To</label>
-                                        <div class="col-lg-10">
-                                            <input type="text" placeholder="" id="inputEmail1" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">Cc / Bcc</label>
-                                        <div class="col-lg-10">
-                                            <input type="text" placeholder="" id="cc" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">Subject</label>
-                                        <div class="col-lg-10">
-                                            <input type="text" placeholder="" id="inputPassword1" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-lg-2 control-label">Message</label>
-                                        <div class="col-lg-10">
-                                            <textarea rows="10" cols="30" class="form-control" id="" name=""></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="col-lg-offset-2 col-lg-10">
-                                            <span class="btn green fileinput-button">
-                                                        <i class="fa fa-plus fa fa-white"></i>
-                                                        <span>Attachment</span>
-                                            <input type="file" name="files[]" multiple="">
-                                            </span>
-                                            <button class="btn btn-send" type="submit">Send</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- /.modal-content -->
+<div class="main-wrapper">
+  <div class="app" id="app">
+    <header class="header">
+      <div class="header-block header-block-collapse hidden-lg-up"> <button class="collapse-btn" id="sidebar-collapse-btn">
+    			<i class="fa fa-bars"></i>
+    		</button> </div>
+      <div class="header-block header-block-search hidden-sm-down">
+        <form role="search">
+          <div class="input-container"> <i class="fa fa-search"></i> <input type="search" placeholder="Search">
+            <div class="underline"></div>
+          </div>
+        </form>
+      </div>
+      <div class="header-block header-block-buttons">
+        <a href="https://github.com/modularcode/modular-admin-html" class="btn btn-sm header-btn"> <i class="fa fa-github-alt"></i> <span>View on GitHub</span> </a>
+        <a href="https://github.com/modularcode/modular-admin-html/stargazers" class="btn btn-sm header-btn"> <i class="fa fa-star"></i> <span>Star Us</span> </a>
+        <a href="https://github.com/modularcode/modular-admin-html/releases/download/v1.1.0/modular-admin-html-1.1.0.zip" class="btn btn-sm header-btn">
+        <i class="fa fa-cloud-download"></i> <span>Download .zip</span> </a>
+      </div>
+      <div class="header-block header-block-nav">
+        <ul class="nav-profile">
+          <li class="notifications new">
+            <a href="" data-toggle="dropdown"> <i class="fa fa-bell-o"></i> <sup>
+    			      <span class="counter">8</span>
+    			    </sup> </a>
+            <div class="dropdown-menu notifications-dropdown-menu">
+              <ul class="notifications-container">
+                <li>
+                  <a href="" class="notification-item">
+                    <div class="img-col">
+                      <div class="img" style="background-image: url('assets/faces/3.jpg')"></div>
                     </div>
-                    <!-- /.modal-dialog -->
-                </div>
-                <!-- /.modal -->
+                    <div class="body-col">
+                      <p> <span class="accent">Zack Alien</span> pushed new commit: <span class="accent">Fix page load performance issue</span>.
+                        </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="notification-item">
+                    <div class="img-col">
+                      <div class="img" style="background-image: url('assets/faces/5.jpg')"></div>
+                    </div>
+                    <div class="body-col">
+                      <p> <span class="accent">Amaya Hatsumi</span> started new task: <span class="accent">Dashboard UI design.</span>.
+                        </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="notification-item">
+                    <div class="img-col">
+                      <div class="img" style="background-image: url('assets/faces/8.jpg')"></div>
+                    </div>
+                    <div class="body-col">
+                      <p> <span class="accent">Andy Nouman</span> deployed new version of <span class="accent">NodeJS REST Api V3</span>                        </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <footer>
+                <ul>
+                  <li> <a href="">
+    			            View All
+    			          </a> </li>
+                </ul>
+              </footer>
             </div>
-            <ul class="inbox-nav inbox-divider">
-                <li class="active">
-                    <a href="#"><i class="fa fa-inbox"></i> Inbox <span class="label label-danger pull-right">2</span></a>
-
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-envelope-o"></i> Sent Mail</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-bookmark-o"></i> Important</a>
-                </li>
-                <li>
-                    <a href="#"><i class=" fa fa-external-link"></i> Drafts <span class="label label-info pull-right">30</span></a>
-                </li>
-                <li>
-                    <a href="#"><i class=" fa fa-trash-o"></i> Trash</a>
-                </li>
+          </li>
+          <li class="profile dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <div class="img" style="background-image: url('https://avatars3.githubusercontent.com/u/3959008?v=3&amp;s=40')"> </div> <span class="name">
+    			      John Doe
+    			    </span> </a>
+            <div class="dropdown-menu profile-dropdown-menu" aria-labelledby="dropdownMenu1">
+              <a class="dropdown-item" href="#"> <i class="fa fa-user icon"></i> Profile </a>
+              <a class="dropdown-item" href="#"> <i class="fa fa-bell icon"></i> Notifications </a>
+              <a class="dropdown-item" href="#"> <i class="fa fa-gear icon"></i> Settings </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="login.html"> <i class="fa fa-power-off icon"></i> Logout </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <div class="sidebar-container">
+        <div class="sidebar-header">
+          <div class="brand">
+            <div class="logo"> <span class="l l1"></span> <span class="l l2"></span> <span class="l l3"></span> <span class="l l4"></span>
+              <span
+                class="l l5"></span>
+            </div> Modular Admin </div>
+        </div>
+        <nav class="menu">
+          <ul class="nav metismenu" id="sidebar-menu">
+            <li>
+              <a href="index.html"> <i class="fa fa-home"></i> Dashboard </a>
+            </li>
+            <li>
+              <a href=""> <i class="fa fa-th-large"></i> Items Manager <i class="fa arrow"></i> </a>
+              <ul class="collapse">
+                <li> <a href="items-list.html">
+    								Items List
+    							</a> </li>
+                <li> <a href="item-editor.html">
+    								Item Editor
+    							</a> </li>
+              </ul>
+            </li>
+            <li>
+              <a href=""> <i class="fa fa-bar-chart"></i> Charts <i class="fa arrow"></i> </a>
+              <ul class="collapse">
+                <li> <a href="charts-flot.html">
+    								Flot Charts
+    							</a> </li>
+                <li> <a href="charts-morris.html">
+    								Morris Charts
+    							</a> </li>
+              </ul>
+            </li>
+            <li>
+              <a href=""> <i class="fa fa-table"></i> Tables <i class="fa arrow"></i> </a>
+              <ul class="collapse">
+                <li> <a href="static-tables.html">
+    								Static Tables
+    							</a> </li>
+                <li> <a href="responsive-tables.html">
+    								Responsive Tables
+    							</a> </li>
+              </ul>
+            </li>
+            <li>
+              <a href="forms.html"> <i class="fa fa-pencil-square-o"></i> Forms </a>
+            </li>
+            <li>
+              <a href=""> <i class="fa fa-desktop"></i> UI Elements <i class="fa arrow"></i> </a>
+              <ul class="collapse">
+                <li> <a href="buttons.html">
+    								Buttons
+    							</a> </li>
+                <li> <a href="cards.html">
+    								Cards
+    							</a> </li>
+                <li> <a href="typography.html">
+    								Typography
+    							</a> </li>
+                <li> <a href="icons.html">
+    								Icons
+    							</a> </li>
+                <li> <a href="grid.html">
+    								Grid
+    							</a> </li>
+              </ul>
+            </li>
+            <li class="active open">
+              <a href=""> <i class="fa fa-file-text-o"></i> Pages <i class="fa arrow"></i> </a>
+              <ul class="collapse in">
+                <li> <a href="login.html">
+    								Login
+    							</a> </li>
+                <li> <a href="signup.html">
+    								Sign Up
+    							</a> </li>
+                <li> <a href="reset.html">
+    								Reset
+    							</a> </li>
+                <li class="active"> <a href="error-404.html">
+    								Error 404 App
+    							</a> </li>
+                <li> <a href="error-404-alt.html">
+    								Error 404 Global
+    							</a> </li>
+                <li> <a href="error-500.html">
+    								Error 500 App
+    							</a> </li>
+                <li> <a href="error-500-alt.html">
+    								Error 500 Global
+    							</a> </li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://github.com/modularcode/modular-admin-html"> <i class="fa fa-github-alt"></i> Theme Docs </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <footer class="sidebar-footer">
+        <ul class="nav metismenu" id="customize-menu">
+          <li>
+            <ul class="collapse">
+              <li class="customize">
+                <div class="customize-item">
+                  <div class="row customize-header">
+                    <div class="col-xs-4"> </div>
+                    <div class="col-xs-4"> <label class="title">fixed</label> </div>
+                    <div class="col-xs-4"> <label class="title">static</label> </div>
+                  </div>
+                  <div class="row hidden-md-down">
+                    <div class="col-xs-4"> <label class="title">Sidebar:</label> </div>
+                    <div class="col-xs-4"> <label>
+    				                        <input class="radio" type="radio" name="sidebarPosition" value="sidebar-fixed">
+    				                        <span></span>
+    				                    </label> </div>
+                    <div class="col-xs-4"> <label>
+    				                        <input class="radio" type="radio" name="sidebarPosition" value="">
+    				                        <span></span>
+    				                    </label> </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4"> <label class="title">Header:</label> </div>
+                    <div class="col-xs-4"> <label>
+    				                        <input class="radio" type="radio" name="headerPosition" value="header-fixed">
+    				                        <span></span>
+    				                    </label> </div>
+                    <div class="col-xs-4"> <label>
+    				                        <input class="radio" type="radio" name="headerPosition" value="">
+    				                        <span></span>
+    				                    </label> </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4"> <label class="title">Footer:</label> </div>
+                    <div class="col-xs-4"> <label>
+    				                        <input class="radio" type="radio" name="footerPosition" value="footer-fixed">
+    				                        <span></span>
+    				                    </label> </div>
+                    <div class="col-xs-4"> <label>
+    				                        <input class="radio" type="radio" name="footerPosition" value="">
+    				                        <span></span>
+    				                    </label> </div>
+                  </div>
+                </div>
+                <div class="customize-item">
+                  <ul class="customize-colors">
+                    <li> <span class="color-item color-red" data-theme="red"></span> </li>
+                    <li> <span class="color-item color-orange active" data-theme="orange"></span> </li>
+                    <li> <span class="color-item color-green" data-theme=""></span> </li>
+                    <li> <span class="color-item color-seagreen" data-theme="seagreen"></span> </li>
+                    <li> <span class="color-item color-blue" data-theme="blue"></span> </li>
+                    <li> <span class="color-item color-purple" data-theme="purple"></span> </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
-            <ul class="nav nav-pills nav-stacked labels-info inbox-divider">
-                <li>
-                    <h4>Labels</h4>
-                </li>
-                <li>
-                    <a href="#"> <i class=" fa fa-sign-blank text-danger"></i> Work </a>
-                </li>
-                <li>
-                    <a href="#"> <i class=" fa fa-sign-blank text-success"></i> Design </a>
-                </li>
-                <li>
-                    <a href="#"> <i class=" fa fa-sign-blank text-info "></i> Family </a>
-                </li>
-                <li>
-                    <a href="#"> <i class=" fa fa-sign-blank text-warning "></i> Friends </a>
-                </li>
-                <li>
-                    <a href="#"> <i class=" fa fa-sign-blank text-primary "></i> Office </a>
-                </li>
+            <a href=""> <i class="fa fa-cog"></i> Customize </a>
+          </li>
+        </ul>
+      </footer>
+    </aside>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <article class="content error-404-page">
+      <section class="section">
+        <div class="error-card">
+          <div class="error-title-block">
+            <h1 class="error-title">404</h1>
+            <h2 class="error-sub-title"> Sorry, page not found </h2>
+          </div>
+          <div class="error-container visible">
+            <p>You better try our awesome search:</p>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="input-group"> <input type="text" class="form-control"> <span class="input-group-btn">
+			                <button class="btn btn-primary" type="button">Search</button>
+			              </span> </div>
+              </div>
+            </div> <br> <a class="btn btn-primary" href="index.html"><i class="fa fa-angle-left"></i> Back to Dashboard</a> </div>
+            <hr>
+            <router-outlet></router-outlet>
+        </div>
+      </section>
+    </article>
+    <footer class="footer">
+      <div class="footer-block buttons">
+        <iframe class="footer-github-btn" src="https://ghbtns.com/github-btn.html?user=modularcode&amp;repo=modular-admin-html&amp;type=star&amp;count=true"
+          frameborder="0" scrolling="0" width="140px" height="20px"></iframe>
+      </div>
+      <div class="footer-block author">
+        <ul>
+          <li> created by <a href="https://github.com/modularcode">ModularCode</a> </li>
+          <li> <a href="https://github.com/modularcode/modular-admin-html#get-in-touch">get in touch</a> </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="modal fade" id="modal-media">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    					<span aria-hidden="true">×</span>
+    					<span class="sr-only">Close</span>
+    				</button>
+            <h4 class="modal-title">Media Library</h4>
+          </div>
+          <div class="modal-body modal-tab-container">
+            <ul class="nav nav-tabs modal-tabs" role="tablist">
+              <li class="nav-item"> <a class="nav-link" href="#gallery" data-toggle="tab" role="tab">Gallery</a> </li>
+              <li class="nav-item"> <a class="nav-link active" href="#upload" data-toggle="tab" role="tab">Upload</a> </li>
             </ul>
-            <ul class="nav nav-pills nav-stacked labels-info ">
-                <li>
-                    <h4>Buddy online</h4>
-                </li>
-                <li>
-                    <a href="#"> <i class=" fa fa-circle text-success"></i>Alireza Zare
-                        <p>I do not think</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"> <i class=" fa fa-circle text-danger"></i>Dark Coders
-                        <p>Busy with coding</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"> <i class=" fa fa-circle text-muted "></i>Mentaalist
-                        <p>I out of control</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"> <i class=" fa fa-circle text-muted "></i>H3s4m
-                        <p>I am not here</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"> <i class=" fa fa-circle text-muted "></i>Dead man
-                        <p>I do not think</p>
-                    </a>
-                </li>
-            </ul>
-
-            <div class="inbox-body text-center">
-                <div class="btn-group">
-                    <a class="btn mini btn-primary" href="javascript:;">
-                        <i class="fa fa-plus"></i>
-                    </a>
+            <div class="tab-content modal-tab-content">
+              <div class="tab-pane fade" id="gallery" role="tabpanel">
+                <div class="images-container">
+                  <div class="row"> </div>
                 </div>
-                <div class="btn-group">
-                    <a class="btn mini btn-success" href="javascript:;">
-                        <i class="fa fa-phone"></i>
-                    </a>
+              </div>
+              <div class="tab-pane fade active in" id="upload" role="tabpanel">
+                <div class="upload-container">
+                  <div id="dropzone">
+                    <form action="/" method="POST" enctype="multipart/form-data" class="dropzone needsclick dz-clickable" id="demo-upload">
+                      <div class="dz-message-block">
+                        <div class="dz-message needsclick"> Drop files here or click to upload. </div>
+                      </div>
+                    </form>
+                  </div>
                 </div>
-                <div class="btn-group">
-                    <a class="btn mini btn-info" href="javascript:;">
-                        <i class="fa fa-cog"></i>
-                    </a>
-                </div>
+              </div>
             </div>
-
-        </aside>
-        <aside class="lg-side">
-            <div class="inbox-head">
-                <h3>Inbox</h3>
-                <form action="#" class="pull-right position">
-                    <div class="input-append">
-                        <input type="text" class="sr-input" placeholder="Search Mail">
-                        <button class="btn sr-btn" type="button"><i class="fa fa-search"></i></button>
-                    </div>
-                </form>
-            </div>
-            <div class="inbox-body">
-                <div class="mail-option">
-                    <div class="chk-all">
-                        <input type="checkbox" class="mail-checkbox mail-group-checkbox">
-                        <div class="btn-group">
-                            <a data-toggle="dropdown" href="#" class="btn mini all" aria-expanded="false">
-                                         All
-                                         <i class="fa fa-angle-down "></i>
-                                     </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#"> None</a></li>
-                                <li><a href="#"> Read</a></li>
-                                <li><a href="#"> Unread</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="btn-group">
-                        <a data-original-title="Refresh" data-placement="top" data-toggle="dropdown" href="#" class="btn mini tooltips">
-                            <i class=" fa fa-refresh"></i>
-                        </a>
-                    </div>
-                    <div class="btn-group hidden-phone">
-                        <a data-toggle="dropdown" href="#" class="btn mini blue" aria-expanded="false">
-                                     More
-                                     <i class="fa fa-angle-down "></i>
-                                 </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#"><i class="fa fa-pencil"></i> Mark as Read</a></li>
-                            <li><a href="#"><i class="fa fa-ban"></i> Spam</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
-                        </ul>
-                    </div>
-                    <div class="btn-group">
-                        <a data-toggle="dropdown" href="#" class="btn mini blue">
-                                     Move to
-                                     <i class="fa fa-angle-down "></i>
-                                 </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#"><i class="fa fa-pencil"></i> Mark as Read</a></li>
-                            <li><a href="#"><i class="fa fa-ban"></i> Spam</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
-                        </ul>
-                    </div>
-
-                    <ul class="unstyled inbox-pagination">
-                        <li><span>1-50 of 234</span></li>
-                        <li>
-                            <a class="np-btn" href="#"><i class="fa fa-angle-left  pagination-left"></i></a>
-                        </li>
-                        <li>
-                            <a class="np-btn" href="#"><i class="fa fa-angle-right pagination-right"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <table class="table table-inbox table-hover">
-                    <tbody>
-                        <tr class="unread">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                            <td class="view-message  dont-show">PHPClass</td>
-                            <td class="view-message ">Added a new class: Login Class Fast Site</td>
-                            <td class="view-message  inbox-small-cells"><i class="fa fa-paperclip"></i></td>
-                            <td class="view-message  text-right">9:27 AM</td>
-                        </tr>
-                        <tr class="unread">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                            <td class="view-message dont-show">Google Webmaster </td>
-                            <td class="view-message">Improve the search presence of WebSite</td>
-                            <td class="view-message inbox-small-cells"></td>
-                            <td class="view-message text-right">March 15</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                            <td class="view-message dont-show">JW Player</td>
-                            <td class="view-message">Last Chance: Upgrade to Pro for </td>
-                            <td class="view-message inbox-small-cells"></td>
-                            <td class="view-message text-right">March 15</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                            <td class="view-message dont-show">Tim Reid, S P N</td>
-                            <td class="view-message">Boost Your Website Traffic</td>
-                            <td class="view-message inbox-small-cells"></td>
-                            <td class="view-message text-right">April 01</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
-                            <td class="view-message dont-show">Freelancer.com <span class="label label-danger pull-right">urgent</span></td>
-                            <td class="view-message">Stop wasting your visitors </td>
-                            <td class="view-message inbox-small-cells"></td>
-                            <td class="view-message text-right">May 23</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
-                            <td class="view-message dont-show">WOW Slider </td>
-                            <td class="view-message">New WOW Slider v7.8 - 67% off</td>
-                            <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
-                            <td class="view-message text-right">March 14</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
-                            <td class="view-message dont-show">LinkedIn Pulse</td>
-                            <td class="view-message">The One Sign Your Co-Worker Will Stab</td>
-                            <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
-                            <td class="view-message text-right">Feb 19</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                            <td class="view-message dont-show">Drupal Community<span class="label label-success pull-right">megazine</span></td>
-                            <td class="view-message view-message">Welcome to the Drupal Community</td>
-                            <td class="view-message inbox-small-cells"></td>
-                            <td class="view-message text-right">March 04</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                            <td class="view-message dont-show">Facebook</td>
-                            <td class="view-message view-message">Somebody requested a new password </td>
-                            <td class="view-message inbox-small-cells"></td>
-                            <td class="view-message text-right">June 13</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                            <td class="view-message dont-show">Skype <span class="label label-info pull-right">family</span></td>
-                            <td class="view-message view-message">Password successfully changed</td>
-                            <td class="view-message inbox-small-cells"></td>
-                            <td class="view-message text-right">March 24</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
-                            <td class="view-message dont-show">Google+</td>
-                            <td class="view-message">alireza, do you know</td>
-                            <td class="view-message inbox-small-cells"></td>
-                            <td class="view-message text-right">March 09</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
-                            <td class="dont-show">Zoosk </td>
-                            <td class="view-message">7 new singles we think you'll like</td>
-                            <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
-                            <td class="view-message text-right">May 14</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                            <td class="view-message dont-show">LinkedIn </td>
-                            <td class="view-message">Alireza: Nokia Networks, System Group and </td>
-                            <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
-                            <td class="view-message text-right">February 25</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                            <td class="dont-show">Facebook</td>
-                            <td class="view-message view-message">Your account was recently logged into</td>
-                            <td class="view-message inbox-small-cells"></td>
-                            <td class="view-message text-right">March 14</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                            <td class="view-message dont-show">Twitter</td>
-                            <td class="view-message">Your Twitter password has been changed</td>
-                            <td class="view-message inbox-small-cells"></td>
-                            <td class="view-message text-right">April 07</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                            <td class="view-message dont-show">InternetSeer Website Monitoring</td>
-                            <td class="view-message">http://golddesigner.org/ Performance Report</td>
-                            <td class="view-message inbox-small-cells"></td>
-                            <td class="view-message text-right">July 14</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
-                            <td class="view-message dont-show">AddMe.com</td>
-                            <td class="view-message">Submit Your Website to the AddMe Business Directory</td>
-                            <td class="view-message inbox-small-cells"></td>
-                            <td class="view-message text-right">August 10</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                            <td class="view-message dont-show">Terri Rexer, S P N</td>
-                            <td class="view-message view-message">Forget Google AdWords: Un-Limited Clicks fo</td>
-                            <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
-                            <td class="view-message text-right">April 14</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                            <td class="view-message dont-show">Bertina </td>
-                            <td class="view-message">IMPORTANT: Don't lose your domains!</td>
-                            <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
-                            <td class="view-message text-right">June 16</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
-                            <td class="view-message dont-show">Laura Gaffin, S P N </td>
-                            <td class="view-message">Your Website On Google (Higher Rankings Are Better)</td>
-                            <td class="view-message inbox-small-cells"></td>
-                            <td class="view-message text-right">August 10</td>
-                        </tr>
-                        <tr class="">
-                            <td class="inbox-small-cells">
-                                <input type="checkbox" class="mail-checkbox">
-                            </td>
-                            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
-                            <td class="view-message dont-show">Facebook</td>
-                            <td class="view-message view-message">Alireza Zare Login faild</td>
-                            <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
-                            <td class="view-message text-right">feb 14</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <hr>
-                <router-outlet></router-outlet>
-            </div>
-        </aside>
+          </div>
+          <div class="modal-footer"> <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> <button type="button" class="btn btn-primary">Insert Selected</button>            </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
     </div>
+    <!-- /.modal -->
+    <div class="modal fade" id="confirm-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    					<span aria-hidden="true">×</span>
+    				</button>
+            <h4 class="modal-title"><i class="fa fa-warning"></i> Alert</h4>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure want to do this?</p>
+          </div>
+          <div class="modal-footer"> <button type="button" class="btn btn-primary" data-dismiss="modal">Yes</button> <button type="button" class="btn btn-secondary"
+              data-dismiss="modal">No</button> </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+  </div>
 </div>

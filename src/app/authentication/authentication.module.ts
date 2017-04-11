@@ -5,9 +5,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // import { SharedModule } from '../shared/shared.module';
 
-import { AuthenticationComponent } from './authentication.component';
-import { SigninComponent } from './signin/signin.component';
-import { SignupComponent } from './signup/signup.component';
+import { AuthenticationComponent } from './index';
+import { SigninComponent } from './signin/index';
+import { LoginComponent } from './login/index';
 
 @NgModule({
   imports: [
@@ -16,7 +16,7 @@ import { SignupComponent } from './signup/signup.component';
     FormsModule,
     ReactiveFormsModule,
   ],
-  declarations: [AuthenticationComponent, SigninComponent, SignupComponent],
-  exports: [AuthenticationComponent, SigninComponent]
+  declarations: [AuthenticationComponent, SigninComponent, LoginComponent],
+  exports: [AuthenticationComponent]
 })
 export class AuthenticationModule { }

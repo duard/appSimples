@@ -1,3 +1,5 @@
+                "../node_modules/gentelella/vendors/fastclick/lib/fastclick.js",
+                "../node_modules/gentelella/vendors/nprogress/nprogress.js",
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/duard/appSimples/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
